@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= theme.title %></title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <style>
+        body {
+            background-color: <%= theme.color %>;
+            color: <%= theme.color === '#DFFFD6' ? '#333' : '#FFF' %>;
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            padding: 1em;
+            background-color: <%= theme.color === '#DFFFD6' ? '#FFFAF0' : '#111' %>;
+            border-bottom: 3px solid <%= theme.color === '#DFFFD6' ? '#FF0000' : '#444' %>;
+            background-repeat: <%= theme.color === '#DFFFD6' ? 'repeat-x' : 'none' %>;
+        }
+        header a {
+            text-decoration: none;
+            color: <%= theme.color === '#DFFFD6' ? '#008000' : '#FF0000' %>;
+            font-weight: bold;
+            margin-left: 1em;
+        }
+        form {
+            margin: 2em auto;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: <%= theme.color === '#DFFFD6' ? '#FFF' : '#222' %>;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            width: fit-content;
+            border: <%= theme.color === '#DFFFD6' ? '2px solid #FF0000' : '2px solid #444' %>;
+        }
+        input, button {
+            padding: 0.5em;
+            margin: 0.5em;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: <%= theme.color === '#DFFFD6' ? '#FF0000' : '#444' %>;
+            color: <%= theme.color === '#DFFFD6' ? '#FFF' : '#FFF' %>;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: <%= theme.color === '#DFFFD6' ? '#008000' : '#FF0000' %>;
+        }
+        footer {
+            margin-top: 2em;
+            font-style: italic;
+            text-align: center;
+        }
+        .tree {
+            position: absolute;
+            bottom: 0;
+            width: auto;
+            z-index: -1;
+        }
+        .nice-tree {
+            height: 400px;
+            bottom: 20px;
+            right: 0;
+        }
+        .naughty-tree {
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><%= theme.title %></h1>
+        <a href="/toggle">Toggle</a>
+    </header>
+    <main>
+        <form action="/search" method="POST">
+            <label for="name">Enter name:</label>
+            <input type="text" id="name" name="name" placeholder="first name, last name" required>
+            <button type="submit">Search</button>
+        </form>
+        <% if (result) { %>
+            <p><%= message %></p>
+        <% } else if (result === false) { %>
+            <p>Not found, check the other list...</p>
+        <% } %>
+    </main>
+    <% if (theme.color === '#DFFFD6') { %>
+        <img src="/images/tree.png" alt="Christmas tree" class="tree nice-tree">
+    <% } else { %>
+        <img src="/images/evil_tree.png" alt="Evil Christmas tree" class="tree naughty-tree">
+    <% } %>
+</body>
+</html>
