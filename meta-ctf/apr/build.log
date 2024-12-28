@@ -1,0 +1,46 @@
+-- Performing Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW
+-- Performing Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW - Failed
+-- Looking for strerror
+-- Looking for strerror - found
+-- Looking for strerror_r
+-- Looking for strerror_r - found
+-- Looking for strerror_s
+-- Looking for strerror_s - not found
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC - Failed
+-- Performing Test SUPPORTS_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS_FLAG - Failed
+-- Performing Test C_SUPPORTS_WERROR_DATE_TIME
+-- Performing Test C_SUPPORTS_WERROR_DATE_TIME - Success
+-- Performing Test CXX_SUPPORTS_WERROR_DATE_TIME
+-- Performing Test CXX_SUPPORTS_WERROR_DATE_TIME - Success
+-- Performing Test CXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW
+-- Performing Test CXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW - Failed
+[  1%] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/Error.cpp.o
+[  3%] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamError.cpp.o
+[  7%] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Error.cpp.o
+[  7%] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ErrorHandling.cpp.o
+[ 17%] Building C object lib/Support/CMakeFiles/LLVMSupport.dir/regerror.c.o
+[0m[91mmake[2]: *** [_deps/retdec-build/deps/yara/CMakeFiles/yara.dir/build.make:101: _deps/retdec-build/deps/yara/yara/src/yara-stamp/yara-configure-linux] Error 127
+[0m[91mmake[1]: *** [CMakeFiles/Makefile2:1166: _deps/retdec-build/deps/yara/CMakeFiles/yara.dir/all] Error 2
+[ 35%] Building CXX object lib/DebugInfo/MSF/CMakeFiles/LLVMDebugInfoMSF.dir/MSFError.cpp.o
+[ 35%] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/CodeViewError.cpp.o
+[ 39%] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/GenericError.cpp.o
+[ 53%] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/RawError.cpp.o
+[ 74%] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Error.cpp.o
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/TableGen/Error.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/Testing/Support/Error.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/Object/Error.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/DebugInfo/MSF/MSFError.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/DebugInfo/PDB/Native/RawError.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/DebugInfo/PDB/DIA/DIAError.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/DebugInfo/PDB/GenericError.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/DebugInfo/CodeView/CodeViewError.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/ExecutionEngine/Orc/OrcError.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/Support/WindowsError.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/Support/MSVCErrorWorkarounds.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/Support/ErrorHandling.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/Support/BinaryStreamError.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/Support/ErrorOr.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm/Support/Error.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm-c/ErrorHandling.h
+-- Installing: /home/cutteruser/rz-retdec/build/deps/install/llvm/include/llvm-c/Error.h
+[91mmake: *** [Makefile:136: all] Error 2

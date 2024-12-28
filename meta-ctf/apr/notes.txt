@@ -1,0 +1,2 @@
+Software and their versions used:
+zulu17.54.21-ca-jdk17.0.13-linux_aarch64
